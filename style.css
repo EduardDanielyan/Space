@@ -1,0 +1,142 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+@keyframes planet{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+body{
+	position: relative;
+    height: 100vh;
+	background-image: url(https://media.istockphoto.com/vectors/space-starry-sky-background-vector-id833533150?k=6&m=833533150&s=170667a&w=0&h=9E9YsOgbTKRzEHMCm435WnHavC60apDwhbtMei4eDtk=);
+}
+
+.center{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
+
+#sun{
+	width: 150px;
+	height: 150px;
+}
+
+#sun img{
+	width: 70%;
+}
+
+#mercury{
+	width: 300px;
+	height: 100px;
+	animation-name: planet;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear ;
+}
+
+#mercury img{
+	width: 5.5%;
+}
+
+#venus{
+	width: 350px;
+    height: 100px;
+
+    animation: planet 6s linear infinite;
+}
+
+#venus img{
+	width: 4%;
+}
+
+#earth{
+	width: 450px;
+	height: 100px;
+	animation:planet 7s linear infinite ;
+
+
+}
+
+#earth img{
+	width: 7%;
+
+}
+
+#moon{
+	position: absolute;
+	width: 70px;
+	height: 80px;
+	left: -30px;
+	bottom: 30px;
+	animation: planet 40s linear infinite;
+
+}
+
+
+#moon img{
+	width: 10%;
+
+}
+
+#mars{
+    width: 630px;
+    height: 100px;
+    animation: planet 14s linear infinite;
+}
+
+#mars img{
+	width: 5%;
+}
+
+#jupiter{
+	width: 820px;
+	height: 100px;
+	animation: planet 84s linear infinite;
+}
+
+#jupiter img{
+	width: 4%;
+}
+
+
+#saturn{
+	width: 1100px;
+	height: 100px;
+	animation: planet 203s linear infinite;
+}
+
+#saturn img{
+	width: 8%;
+}
+
+#uranus{
+	width: 1250px;
+	height: 100px;
+	animation: planet 588s linear infinite;
+}
+
+#uranus img{
+	width: 4%;
+}
+
+#neptun{
+	width: 1500px;
+	height:100px;
+	animation: planet 1932s linear infinite;
+}
+
+#neptun img{
+	width: 3%;
+}
